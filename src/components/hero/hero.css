@@ -1,0 +1,63 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* Centers the image */
+}
+
+/* Wrapper for the text content */
+.hero_wrapper {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the content */
+  text-align: center;
+  color: var(--color-neutral3); 
+}
+
+/* Title styling */
+.hero_title {
+  animation-name: fade-in;
+  animation-duration: 1750ms;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Subtitle styling */
+.hero_subtitle {
+  font-family: var(--font-playfair);
+  font-size: 1.9rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  animation-name: slide-in-bottom;
+  animation-duration: 1750ms;
+}
+
+/* Button Styling */
+.hero_cta_button {
+  animation: fade-in-forward 1750ms linear 0s 1 normal forwards;
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background: var(--color-accent1); /* Red color */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero_cta_button:hover {
+  background: var(--color-accent2); /* Darker red on hover */
+}

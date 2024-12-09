@@ -1,0 +1,54 @@
+.content {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    height: auto;
+}
+
+.content_header{
+    font-family: var(--font-playfair);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--color-neutral3);  
+    animation-name: slide-in-right;
+    animation-duration: 1750ms;     
+}
+
+.content_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .content_wrapper {
+        flex-direction: column;
+    }
+}
+
+.content_button {
+    border: 2px solid var(--color-accent1);
+    background-color: transparent;
+    color: var(--color-accent1);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-family: var(--font-tertiary);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content_button:hover {
+    background-color: var(--color-accent1);
+    color: var(--color-bg);
+}
+
