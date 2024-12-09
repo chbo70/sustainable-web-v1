@@ -18,7 +18,7 @@ html, body {
 /* Define color variables */
 :root {
   --color-bg: #EAECE9;
-  --color-primary: #4D9ABF;
+  --color-primary: #7E8EB0;
   --color-secondary: #72C7EB;
   --color-accent1: #FF715B;
   --color-accent2: #F4C762;
@@ -114,6 +114,7 @@ footer {
   }
 }
 
+
 @keyframes slide-in-right {
   from {
     opacity: 0;
@@ -122,5 +123,27 @@ footer {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-right {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-20%);
   }
 }

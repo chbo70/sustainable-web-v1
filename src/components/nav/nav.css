@@ -14,16 +14,23 @@
 }
 
 nav {
-    background-color: var(--color-primary);
+    background-color: transparent;
+    /*make the nav bar float*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     font-family: var(--font-primary);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0.25rem;
+
 }
 
 nav a {
-    color: var(--color-neutral2);
+    color: var(--color-neutral1);
     text-decoration: none;
     font-weight: 700;
     margin: 0 1rem;
@@ -33,5 +40,5 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--color-accent2);
+    color: var(--color-neutral2);
 }

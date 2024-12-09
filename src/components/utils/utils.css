@@ -25,13 +25,8 @@
 
 .card_image {
   padding: 12px;
-  opacity: 0;
-  transition: opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.card_image.visible {
-  opacity: 1;
-}
 
 .card_title {
   font-family: var(--font-primary);

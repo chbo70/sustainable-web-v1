@@ -1,5 +1,7 @@
 import React from "react";
 import "./footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faTwitter, faInstagram, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -8,8 +10,9 @@ const Footer = () => {
         <div className="footer_section about">
           <h2 className="footer_title">About</h2>
           <p>
-            Welcome to our blog where we share insights, stories, and updates on
-            various topics. Stay tuned for more interesting content!
+            This website is part of my bachelor thesis, focusing on
+            sustainability. This website is a practical example of a blog. It will be
+            used for testing and applying sustainable methods for reducing carbon emission.
           </p>
         </div>
         <div className="footer_section links">
@@ -37,26 +40,26 @@ const Footer = () => {
           <h2 className="footer_title">Follow Us</h2>
           <div className="social_links">
             {/* eslint-disable-next-line */}
-            <a href="#">
-              <i className="fab fa-facebook-f"></i>
+            <a href="https://www.facebook.com/?locale=de_DE">
+              <FontAwesomeIcon icon={faFacebookF} />
             </a>
             {/* eslint-disable-next-line */}
-            <a href="#">
-              <i className="fab fa-twitter"></i>
+            <a href="https://x.com/?lang=de">
+              <FontAwesomeIcon icon={faXTwitter} />
             </a>
             {/* eslint-disable-next-line */}
-            <a href="#">
-              <i className="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/">
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
             {/* eslint-disable-next-line */}
-            <a href="#">
-              <i className="fab fa-linkedin-in"></i>
+            <a href="https://at.linkedin.com/">
+              <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
           </div>
         </div>
       </div>
       <div className="footer_bottom">
-        <p>&copy; 2023 Blog Name. All rights reserved.</p>
+        <p>&copy; 2024 Blog Name. All rights reserved.</p>
       </div>
     </footer>
   );

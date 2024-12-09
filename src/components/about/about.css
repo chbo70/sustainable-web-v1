@@ -1,0 +1,45 @@
+.about {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    height: auto;
+    display: grid;
+    padding: 4rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about_text, .about_image {
+    opacity: 0;
+}
+
+.about.visible .about_text {
+    opacity: 1; 
+    animation-name: slide-in-right;
+    animation-duration: 1750ms;
+}
+
+.about.visible .about_image {
+    opacity: 1; 
+    animation-name: slide-in-left;
+    animation-duration: 1750ms;
+}
+
+.about_text_header {
+    font-family: var(--font-playfair);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    padding-top: 2rem;
+    text-align: left;
+    color: var(--color-neutral3);
+}
+
+.about_text_content{
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
