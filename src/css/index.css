@@ -9,7 +9,7 @@
 }
 
 html, body {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* Import Google Fonts */
@@ -42,45 +42,6 @@ html, body {
   --font-tertiary: 'Open Sans', sans-serif; /* Alternative body text */
   --font-decorative: 'Mr Dafoe', cursive; /* Decorative font for accents */
   --font-playfair: 'Playfair Display', serif; /* Playfair Display font */
-}
-
-/* General Styles */
-body {
-  background-color: var(--color-snow-white);
-  color: var(--color-mountain-grey);
-  font-family: var(--font-secondary);
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: var(--color-powder-blue);
-  color: var(--color-snow-white);
-  font-family: var(--font-primary);
-  font-weight: 700;
-  padding: 1rem;
-  text-align: center;
-}
-
-footer {
-  background-color: var(--color-pine-green);
-  color: var(--color-snow-white);
-  font-family: var(--font-secondary);
-  text-align: center;
-  padding: 1rem;
-}
-
-.highlight {
-  color: var(--color-golden-glow);
-  font-family: var(--font-primary);
-  font-weight: 700;
-}
-
-.decorative {
-  font-family: var(--font-decorative);
-  font-size: 1.5rem;
-  color: var(--color-sunset-orange);
 }
 
 @keyframes fade-in {
@@ -118,7 +79,7 @@ footer {
 @keyframes slide-in-right {
   from {
     opacity: 0;
-    transform: translateX(-20%);
+    transform: translateX(-50%);
   }
   to {
     opacity: 1;
@@ -129,7 +90,7 @@ footer {
 @keyframes slide-in-left {
   from {
     opacity: 0;
-    transform: translateX(20%);
+    transform: translateX(50%);
   }
   to {
     opacity: 1;

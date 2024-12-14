@@ -35,10 +35,10 @@ const Content = () => {
 
   return (
     <section className="content" ref={contentRef}>
-      <div className="content_header_wrapper">
+      <div className="content_header_wrapper_2">
         <h1 className="content_header">Latest News</h1>
       </div>
-      <div className="content_wrapper">
+      <div className="content_wrapper_2">
         <Card
           title="Title 1"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla ut nulla sit amet nisi maximus."
@@ -52,7 +52,7 @@ const Content = () => {
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla ut nulla sit amet nisi maximus."
         />
       </div>
-      <div className="content_button_wrapper">
+      <div className="content_button_wrapper_2">
         <Button className="content_button" link="#" text="read more" />
       </div>
     </section>
