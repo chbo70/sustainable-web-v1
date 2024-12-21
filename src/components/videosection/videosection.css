@@ -1,9 +1,11 @@
 .video {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     padding: 2rem;
+    background-color: var(--color-neutral2);
+    color: var(--color-text);
+    height: auto;
 }
 
 .video_wrapper {
@@ -11,13 +13,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
     gap: 2rem;
 }
 
 .video_player {
-    width: 1792px; 
-    height: 1008px; 
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -13,8 +13,8 @@ function App() {
       <Hero />
       <About />
       <Content />
-      <VideoSection />
       <Carousel />
+      <VideoSection />
       <Footer />
     </>
   );

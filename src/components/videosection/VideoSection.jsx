@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./videosection.css";
-import VideoFile from "../../assets/mountain_wind_wheel.mp4";
+import VideoFile from "../../assets/snowy_mountain.mp4";
 
 const VideoSection = () => {
     const videoRef = useRef(null);
@@ -9,14 +9,14 @@ const VideoSection = () => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    videoRef.current.muted = true; // Ensure the video is muted
+                    videoRef.current.muted = true; 
                     videoRef.current.play();
                 } else {
                     videoRef.current.pause();
                 }
             },
             {
-                threshold: 0.5, // Trigger when 50% of the video is visible
+                threshold: 0.6, 
             }
         );
 
@@ -40,6 +40,16 @@ const VideoSection = () => {
                     <source src={VideoFile} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
+            </div>
+            <div className="video_text">
+                <h1 className="video_text_header">Video Section</h1>
+                <p className="video_text_content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fuga
+                    incidunt asperiores harum architecto, nisi voluptate dignissimos velit
+                    accusamus unde aliquam. Debitis quis vero nulla quidem cumque
+                    repudiandae doloribus eligendi?
+                </p>
+                <button className="video_button">Watch More</button>
             </div>
         </section>
     );
