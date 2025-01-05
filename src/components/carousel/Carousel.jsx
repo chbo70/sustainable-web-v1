@@ -34,6 +34,15 @@ const Carousel = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
     };
 
+    function autoSwipe() {
+        const interval = setInterval(() => {
+            nextSlide();
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }
+
+    React.useEffect(autoSwipe, []);
     return (
         <section className="carousel">
             <button className="carousel_arrow left" onClick={prevSlide}>&#10094;</button>
