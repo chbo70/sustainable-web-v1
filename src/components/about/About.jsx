@@ -42,8 +42,8 @@ const About = () => {
                     repudiandae doloribus eligendi?
                 </p>
             </div>
-            <div className="about_image">
-                <img src="https://via.placeholder.com/816x462" alt="placeholder" />
+            <div className="about_image_wrapper">
+                <img class="about_image" src="https://via.placeholder.com/816x462" alt="placeholder" />
             </div>
         </section>
     );

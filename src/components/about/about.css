@@ -25,6 +25,10 @@
     animation-duration: 1750ms;
 }
 
+.about_image {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
 .about_image_2 {
     animation: slide-in-left 1750ms linear;
     animation-timeline: view();

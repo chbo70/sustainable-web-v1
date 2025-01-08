@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 import About from "./components/about/About";
 import VideoSection from "./components/videosection/VideoSection";
 import Carousel from "./components/carousel/Carousel";
+import Team from "./components/team/Team";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Content />
       <Carousel />
       <VideoSection />
+      <Team />
       <Footer />
     </>
   );
