@@ -5,6 +5,12 @@
   overflow: hidden;
 }
 
+@media (max-width: 1024px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
 .hero_img {
   width: 100%;
   height: 100%;
@@ -20,6 +26,21 @@
   transform: translate(-50%, -50%); /* Centers the content */
   text-align: center;
   color: var(--color-neutral3); 
+}
+
+@media screen and (max-width: 1024px) {
+  .hero_wrapper {
+    top: 24%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero_wrapper {
+    top: 25%;
+    width: 100%;
+  }
+  
 }
 
 /* Title styling */

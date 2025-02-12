@@ -1,4 +1,4 @@
-import Logo from '../../assets/logo.webp'
+import Logo from '../../assets/leaf.svg'
 import './nav.css'
 const Nav = () => {
     return (

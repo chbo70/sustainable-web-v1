@@ -39,11 +39,20 @@ const About = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fuga
                     incidunt asperiores harum architecto, nisi voluptate dignissimos velit
                     accusamus unde aliquam. Debitis quis vero nulla quidem cumque
-                    repudiandae doloribus eligendi?
+                    repudiandae doloribus eligendi? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Est fuga incidunt asperiores harum architecto, nisi
+                    voluptate dignissimos velit accusamus unde aliquam. Debitis quis vero
+                    &nbsp;
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fuga
+                    incidunt asperiores harum architecto, nisi voluptate dignissimos velit
+                    accusamus unde aliquam. Debitis quis vero nulla quidem cumque
+                    repudiandae doloribus eligendi? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Est fuga incidunt asperiores harum architecto, nisi
+                    voluptate dignissimos velit accusamus unde aliquam. Debitis quis vero
                 </p>
             </div>
             <div className="about_image_wrapper">
-                <img class="about_image" src="https://via.placeholder.com/816x462" alt="placeholder" />
+                <img class="about_image" src="https://placehold.co/816x462.gif" alt="placeholder" />
             </div>
         </section>
     );

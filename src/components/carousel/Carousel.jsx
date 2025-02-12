@@ -5,19 +5,19 @@ const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const items = [
         {
-            src: "https://via.placeholder.com/1200x675",
+            src: "https://placehold.co/1200x675.avif",
             quote: "Quote 1"
         },
         {
-            src: "https://via.placeholder.com/1200x675",
+            src: "https://placehold.co/1200x675.avif",
             quote: "Quote 2"
         },
         {
-            src: "https://via.placeholder.com/1200x675",
+            src: "https://placehold.co/1200x675.avif",
             quote: "Quote 3"
         },
         {
-            src: "https://via.placeholder.com/1200x675",
+            src: "https://placehold.co/1200x675.avif",
             quote: "Quote 4"
         }
     ];

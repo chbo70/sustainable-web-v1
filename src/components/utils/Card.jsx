@@ -5,7 +5,7 @@ const Card = ({ title, content }) => {
     <div className="card">
       <img
         className="card_image"
-        src="https://via.placeholder.com/325x231"
+        src="https://placehold.co/325x231.avif"
         alt="placeholder"
       />
       <h1 className="card_title">{title}</h1>

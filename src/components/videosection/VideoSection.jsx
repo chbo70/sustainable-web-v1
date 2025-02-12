@@ -3,6 +3,7 @@ import "./videosection.css";
 import VideoFile from "../../assets/snowy_mountain.mp4";
 import Button from "../utils/Button";
 
+
 const VideoSection = () => {
   const videoRef = useRef(null);
 

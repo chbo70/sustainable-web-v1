@@ -9,8 +9,16 @@
     grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (max-width: 1024px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
 .about_text, .about_image {
     opacity: 0;
+    margin-bottom: 2rem;
 }
 
 .about.visible .about_text {
