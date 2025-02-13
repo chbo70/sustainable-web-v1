@@ -6,7 +6,7 @@ const Team = () => {
     // Array of team members, each object contains name, role, and
     // image URL of the team member
     const teamMembers = [
-        { name: 'Alice Johnson', role: 'Project Manager', image: 'https://placehold.co/200x200.jpeg' },
+        { name: 'Milena Hilti', role: 'Project Manager', image: 'https://placehold.co/200x200.jpeg' },
         { name: 'Bob Smith', role: 'Lead Developer', image: 'https://placehold.co/200x200.jpeg' },
         { name: 'Paul Reiner', role: 'UI/UX Designer', image: 'https://placehold.co/200x200.jpeg' },
         { name: 'Diana Johnson', role: 'Software Engineer', image: 'https://placehold.co/200x200.jpeg' },
