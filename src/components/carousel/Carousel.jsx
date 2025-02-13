@@ -19,6 +19,10 @@ const Carousel = () => {
         {
             src: "https://placehold.co/1200x675.avif",
             quote: "Quote 4"
+        },
+        {
+            src: "https://placehold.co/1200x675.avif",
+            quote: "Quote 5"
         }
     ];
 
