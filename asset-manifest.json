@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sustainable-web-v1/static/css/main.8c5aebd4.css",
+    "main.css": "/sustainable-web-v1/static/css/main.7804ef4c.css",
     "main.js": "/sustainable-web-v1/static/js/main.c6b87242.js",
     "static/js/453.e559dc9c.chunk.js": "/sustainable-web-v1/static/js/453.e559dc9c.chunk.js",
     "static/media/snowy_mountain.mp4": "/sustainable-web-v1/static/media/snowy_mountain.ef11b4eb45ba60d09c44.mp4",
@@ -8,12 +8,12 @@
     "static/media/one-leaf.jpg": "/sustainable-web-v1/static/media/one-leaf.c3252abdb47d23f56716.jpg",
     "static/media/leaf.svg": "/sustainable-web-v1/static/media/leaf.67405f5be0da92966f4562af918a34d7.svg",
     "index.html": "/sustainable-web-v1/index.html",
-    "main.8c5aebd4.css.map": "/sustainable-web-v1/static/css/main.8c5aebd4.css.map",
+    "main.7804ef4c.css.map": "/sustainable-web-v1/static/css/main.7804ef4c.css.map",
     "main.c6b87242.js.map": "/sustainable-web-v1/static/js/main.c6b87242.js.map",
     "453.e559dc9c.chunk.js.map": "/sustainable-web-v1/static/js/453.e559dc9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c5aebd4.css",
+    "static/css/main.7804ef4c.css",
     "static/js/main.c6b87242.js"
   ]
 }
