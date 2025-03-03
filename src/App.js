@@ -6,15 +6,18 @@ import About from "./components/about/About";
 import VideoSection from "./components/videosection/VideoSection";
 import Carousel from "./components/carousel/Carousel";
 import Team from "./components/team/Team";
+import ImageSection from "./components/images/ImageSection";
+import Banner from "./components/banner/Banner";
 
 function App() {
   return (
     <>
       <Nav />
       <Hero />
+      <Banner />
       <About />
       <Content />
-      <Carousel />
+      <ImageSection />
       <VideoSection />
       <Team />
       <Footer />

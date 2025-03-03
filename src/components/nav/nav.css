@@ -1,43 +1,51 @@
-
 .logo {
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin-top: 10px;
-    padding: 4px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-top: 10px;
+  padding: 2px;
 }
 
 .nav-links {
-    font-size: large;
-    display: flex;
-    flex-direction: row;
+  font-size: large;
+  display: flex;
+  flex-direction: row;
 }
 
-nav {
-    background-color: transparent;
-    /*make the nav bar float*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    font-family: var(--font-primary);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0.25rem;
+.navbar {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
 }
 
-nav a {
-    color: var(--color-neutral1);
-    text-decoration: none;
-    font-weight: 700;
-    margin: 0 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 0px;
+  background-color: var(--color-neutral2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.2s ease-in-out;
 }
 
-nav a:hover {
-    color: var(--color-neutral2);
+.navbar .nav_link_item {
+  color: var(--color-neutral1);
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar .nav_link_item:hover {
+  color: var(--color-pine-green);
 }

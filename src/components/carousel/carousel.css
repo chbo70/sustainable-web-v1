@@ -1,13 +1,14 @@
 .carousel {
-    background-color: var(--color-bg);
+    height: 100vh;
     position: relative;
     overflow: hidden;
+
     /* only on the y axis add padding */
 }
 
 .carousel_wrapper {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.9s ease-in-out;
     padding-top: 2.5rem ;
     padding-bottom: 2.5rem;
 }

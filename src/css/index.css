@@ -6,42 +6,44 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
-html, body {
-  overflow-x: clip;
+html,
+body {
+  overflow-x: hidden;
 }
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Mr+Dafoe&family=Playfair+Display:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Mr+Dafoe&family=Playfair+Display:wght@400;700&display=swap");
 
 /* Define color variables */
 :root {
-  --color-bg: #EAECE9;
-  --color-primary: #7E8EB0;
-  --color-secondary: #72C7EB;
-  --color-accent1: #FF715B;
-  --color-accent2: #F4C762;
-  --color-neutral1: #2C3E50;
-  --color-neutral2: #F7F8F9;
-  --color-neutral3: #2C3E50;
+  --color-bg: #eaece9;
+  --color-primary: #7e8eb0;
+  --color-secondary: #72c7eb;
+  --color-accent1: #ff715b;
+  --color-accent2: #f4c762;
+  --color-neutral1: #2c3e50;
+  --color-neutral2: #f7f8f9;
+  --color-neutral3: #2c3e50;
 
-  --color-snow-white: #FFFFFF;
-  --color-logo: #EAECE9;
+  --color-snow-white: #ffffff;
+  --color-logo: #eaece9;
   --color-text: #462534;
   --color-icy-blue: #72c7eb;
-  --color-powder-blue: #4D9ABF;
-  --color-mountain-grey: #B0B8C1;
-  --color-ski-jacket-red: #D72638;
-  --color-pine-green: #2E8B57;
-  --color-sunset-orange: #FF8303;
-  --color-golden-glow: #FFD700;
+  --color-powder-blue: #4d9abf;
+  --color-mountain-grey: #b0b8c1;
+  --color-ski-jacket-red: #d72638;
+  --color-pine-green: #2e8b57;
+  --color-sunset-orange: #ff8303;
+  --color-golden-glow: #c9913d;
 
-  --font-primary: 'Montserrat', sans-serif; /* For headings */
-  --font-secondary: 'Roboto', sans-serif; /* For body text */
-  --font-tertiary: 'Open Sans', sans-serif; /* Alternative body text */
-  --font-decorative: 'Mr Dafoe', cursive; /* Decorative font for accents */
-  --font-playfair: 'Playfair Display', serif; /* Playfair Display font */
+  --font-primary: "Montserrat", sans-serif; /* For headings */
+  --font-secondary: "Roboto", sans-serif; /* For body text */
+  --font-tertiary: "Open Sans", sans-serif; /* Alternative body text */
+  --font-decorative: "Mr Dafoe", cursive; /* Decorative font for accents */
+  --font-playfair: "Playfair Display", serif; /* Playfair Display font */
 }
 
 @keyframes fade-in {
@@ -74,7 +76,6 @@ html, body {
     transform: scale(1);
   }
 }
-
 
 @keyframes slide-in-right {
   from {

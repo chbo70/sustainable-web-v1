@@ -1,9 +1,13 @@
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
   position: relative;
-  width: 100%;
-  height: 85vh;
   overflow: hidden;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 }
+
 
 @media (max-width: 1024px) {
   .hero {
@@ -13,24 +17,25 @@
 
 .hero_img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  opacity: 0.8;
   object-fit: cover;
-  object-position: center; /* Centers the image */
+  object-position: center; 
 }
 
 /* Wrapper for the text content */
 .hero_wrapper {
   position: absolute;
-  top: 20%;
+  top: 42%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centers the content */
+  transform: translate(-50%, -50%);
   text-align: center;
   color: var(--color-neutral3); 
 }
 
 @media screen and (max-width: 1024px) {
   .hero_wrapper {
-    top: 24%;
+    top: 30%;
     width: 80%;
   }
 }
@@ -40,7 +45,16 @@
     top: 25%;
     width: 100%;
   }
-  
+}
+
+@media screen and (max-width: 480px) {
+  .hero_wrapper {
+    top: 38%;
+  }
+
+  .hero_img {
+    height: 100vh;
+  }
 }
 
 /* Title styling */
@@ -60,25 +74,27 @@
   font-family: var(--font-playfair);
   font-size: 1.9rem;
   padding: 10px;
-  margin-bottom: 10px;
   animation-name: slide-in-bottom;
   animation-duration: 1750ms;
 }
 
+.hero_cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 /* Button Styling */
 .hero_cta_button {
-  animation: fade-in-forward 1750ms linear 0s 1 normal forwards;
-  margin-top: 30px;
+  background-color: var(--color-pine-green);
   padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  background: var(--color-powder-blue); /* Red color */
-  color: white;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  
+  animation-name: slide-in-bottom;
+  animation-duration: 1750ms;
 }
 
 .hero_cta_button:hover {
-  background: var(--color-icy-blue); /* Darker red on hover */
+  background: var(--color-golden-glow); /* Darker red on hover */
 }

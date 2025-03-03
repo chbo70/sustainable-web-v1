@@ -4,7 +4,7 @@
     text-align: center;
     background-color: var(--color-neutral2);
     color: var(--color-text);
-    height: auto;
+    height: 80vh;
 }
 
 .content_header_wrapper, .content_wrapper, .content_button_wrapper {
