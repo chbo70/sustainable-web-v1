@@ -20,6 +20,23 @@
     padding-left: 2rem;
     padding-bottom: 4rem;
     background-size: cover;
+
+    background-position: left;
+  }
+
+  .hero_wrapper {
+    grid-row-start: 1;
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 672px) {
+  .hero {
+    height: 80vh;
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    background-size: cover;
+    background-position: left;
   }
 
   .hero_wrapper {
@@ -52,7 +69,7 @@
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-start: 2;
-    background-size: contain;
+    background-size: cover;
     background-position: bottom right;
     background-image: url(../../assets/hero_leaf_2.jpg);
     background-repeat: no-repeat;
@@ -64,6 +81,23 @@
     grid-column-start: 1;
     padding-top: 2rem;
     padding-left: 4rem;
+  }
+
+  .hero_title {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 2048px) {
+  .hero {
+    background-size: contain;
+    background-position: bottom right;
+    background-image: url(../../assets/hero_leaf_2.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .hero_title {
+    font-size: 6rem;
   }
 }
 

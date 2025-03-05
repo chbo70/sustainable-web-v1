@@ -17,7 +17,8 @@ function App() {
       <Hero />
       <Banner />
       <Problems />
-      {/* <About />
+      <About />
+      {/* 
       <Content /> */}
       <ImageSection />
       <VideoSection />

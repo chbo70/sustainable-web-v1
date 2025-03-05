@@ -25,28 +25,56 @@
 }
 
 .card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
   flex-direction: column;
-  gap: 40px;
+  gap: 1rem;
 }
 
 @media screen and (min-width: 480px) {
   .card-container {
     padding: 0;
+    gap: 40px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 512px) {
+  .app_header h1 {
+    font-size: 3rem;
+  }
+
+  .app_header p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .problems {
     padding: 5rem;
   }
+
+  .card-container {
+    gap: 40px;
+  }
+  .app_header h1 {
+    font-size: 4rem;
+  }
+
+  .app_header p {
+    font-size: 1.5rem;
+  }
 }
 
-@media (min-width: 1152px) {
+@media screen and (min-width: 1152px) {
   .card-container {
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .app_header h1 {
+    font-size: 4rem;
+  }
+
+  .app_header p {
+    font-size: 1.8rem;
   }
 }

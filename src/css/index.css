@@ -147,4 +147,13 @@ body {
   }
 }
 
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 /* Add more animations types dont add one that is already present*/

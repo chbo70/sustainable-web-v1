@@ -24,12 +24,13 @@ const ImageSection = () => {
   }, []);
   return (
     <section className="image-section">
+      <h1 className="image-content-main-title">Benefits</h1>
       {/* <div className="video_triangle_1"></div> */}
       <div className="image-section-overlay">
         <ul className="image-content-list">
           <li className="image-content-list-item">
             <div className="image-content">
-              <h1 className="image-content-title">Title 1</h1>
+              <h2 className="image-content-title">Lower Carbon Footprint</h2>
               <p className="image-content-description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Recusandae, quam officiis placeat soluta distinctio harum,
@@ -40,7 +41,7 @@ const ImageSection = () => {
           </li>
           <li className="image-content-list-item">
             <div className="image-content">
-              <h1 className="image-content-title">Title 2</h1>
+              <h2 className="image-content-title">Cost Savings</h2>
               <p className="image-content-description">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
                 rerum voluptate dicta atque ea pariatur quidem error sunt ullam
@@ -51,7 +52,7 @@ const ImageSection = () => {
           </li>
           <li className="image-content-list-item">
             <div className="image-content">
-              <h1 className="image-content-title">Title 3</h1>
+              <h2 className="image-content-title">Maintance & Scalability</h2>
               <p className="image-content-description">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Veritatis ut, saepe expedita ullam fugit distinctio iusto porro.
@@ -62,7 +63,7 @@ const ImageSection = () => {
           </li>
           <li className="image-content-list-item">
             <div className="image-content">
-              <h1 className="image-content-title">Title 4</h1>
+              <h2 className="image-content-title">User Experience</h2>
               <p className="image-content-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Possimus earum velit vel perferendis natus accusantium fugiat
