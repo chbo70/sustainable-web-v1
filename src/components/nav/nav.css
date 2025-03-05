@@ -1,15 +1,15 @@
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: block;
-  margin-top: 10px;
-  padding: 2px;
+  margin: 0.5rem;
 }
 
 .nav-links {
   font-size: large;
   display: flex;
   flex-direction: row;
+  letter-spacing: 0.2em;
 }
 
 .navbar {
@@ -22,14 +22,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.5rem;
+  font-family: var(--font-secondary);
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .navbar.sticky {
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 0px;
   background-color: var(--color-neutral2);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
@@ -48,4 +49,11 @@
 
 .navbar .nav_link_item:hover {
   color: var(--color-pine-green);
+}
+
+@media screen and (min-width: 384px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
 }

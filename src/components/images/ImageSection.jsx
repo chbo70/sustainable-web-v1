@@ -24,7 +24,7 @@ const ImageSection = () => {
   }, []);
   return (
     <section className="image-section">
-        <div className="video_triangle_1"></div>
+      {/* <div className="video_triangle_1"></div> */}
       <div className="image-section-overlay">
         <ul className="image-content-list">
           <li className="image-content-list-item">
@@ -69,9 +69,8 @@ const ImageSection = () => {
                 assumenda praesentium. Ea numquam blanditiis quis ratione
                 aliquam provident laudantium officiis, iste pariatur veniam.
               </p>
-              <div className="video_triangle_2"></div>
+              {/* <div className="video_triangle_2"></div> */}
             </div>
-            
           </li>
         </ul>
       </div>

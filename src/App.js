@@ -8,6 +8,7 @@ import Carousel from "./components/carousel/Carousel";
 import Team from "./components/team/Team";
 import ImageSection from "./components/images/ImageSection";
 import Banner from "./components/banner/Banner";
+import Problems from "./components/problems/Problems";
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       <Nav />
       <Hero />
       <Banner />
-      <About />
-      <Content />
+      <Problems />
+      {/* <About />
+      <Content /> */}
       <ImageSection />
       <VideoSection />
       <Team />
