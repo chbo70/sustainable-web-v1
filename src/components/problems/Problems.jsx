@@ -34,7 +34,7 @@ const Problems = () => {
   ];
 
   return (
-    <div className="problems">
+    <section className="problems">
       <div className="app_header">
         <h1>Why Sustainable Web Design Matters</h1>
         <p>Reducing CO₂ emissions and improving web efficiency</p>
@@ -44,7 +44,7 @@ const Problems = () => {
           <Feature key={index} {...reason} isMain={index === 1} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

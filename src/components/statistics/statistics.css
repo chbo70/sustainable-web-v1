@@ -1,0 +1,186 @@
+.statistics_header {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.statistics_header h1 {
+  align-self: center;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-neutral3);
+  margin-bottom: 2rem;
+}
+
+.statistics_header p {
+  font-family: var(--font-tertiary);
+  font-size: 1.2rem;
+  color: var(--color-text);
+  text-align: justify;
+  margin: 1rem 0;
+}
+
+.statistics_charts {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 10px;
+  gap: 2rem;
+}
+
+.statistics_chart_pie_wrapper,
+.statistics_chart_bar_horizontal_wrapper,
+.statistics_chart_bar_vertical_wrapper {
+  background-color: var(--color-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.statistics_chart_pie,
+.statistics_chart_bar_horizontal,
+.statistics_chart_bar_vertical {
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.statistics_chart_pie_content h2,
+.statistics_chart_bar_horizontal_content h2,
+.statistics_chart_bar_vertical_content h2 {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-neutral3);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.statistics_chart_pie_content p,
+.statistics_chart_bar_horizontal_content p,
+.statistics_chart_bar_vertical_content p {
+  font-family: var(--font-tertiary);
+  font-size: 1.2rem;
+  color: var(--color-text);
+  text-align: justify;
+  margin: 1rem 0;
+}
+
+/* Create medai queries empty for min width 384px, 672px, 768px, 1152px, 1600px */
+/* Create media queries for min width 384px */
+@media (min-width: 672px) {
+  .statistics {
+    padding: 2rem;
+  }
+
+  .statistics_header h1 {
+    font-size: 3rem;
+  }
+
+  .statistics_header p {
+    font-size: 1.5rem;
+  }
+
+  .statistics_chart_pie,
+  .statistics_chart_bar_horizontal,
+  .statistics_chart_bar_vertical {
+    align-self: center;
+  }
+
+  .statistics_chart_pie_content h2,
+  .statistics_chart_bar_horizontal_content h2,
+  .statistics_chart_bar_vertical_content h2 {
+    font-size: 1.8rem;
+  }
+
+  .statistics_chart_pie_content p,
+  .statistics_chart_bar_horizontal_content p,
+  .statistics_chart_bar_vertical_content p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  .statistics_chart_pie_wrapper,
+  .statistics_chart_bar_horizontal_wrapper,
+  .statistics_chart_bar_vertical_wrapper {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .statistics_chart_pie,
+  .statistics_chart_bar_horizontal,
+  .statistics_chart_bar_vertical {
+    max-height: 400px;
+    align-self: center;
+  }
+  .statistics_chart_pie_wrapper,
+  .statistics_chart_bar_horizontal_wrapper,
+  .statistics_chart_bar_vertical_wrapper {
+    min-height: 475px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .statistics_header_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 70%;
+    justify-self: center;
+  }
+
+  .statistics_chart_bar_horizontal_content,
+  .statistics_chart_bar_vertical_content,
+  .statistics_chart_pie_content {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .statistics_chart_pie_wrapper,
+  .statistics_chart_bar_horizontal_wrapper,
+  .statistics_chart_bar_vertical_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .statistics_chart_pie,
+  .statistics_chart_bar_horizontal,
+  .statistics_chart_bar_vertical {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .statistics_chart_bar_horizontal canvas,
+  .statistics_chart_bar_vertical canvas,
+  .statistics_chart_pie canvas {
+    align-self: center;
+  }
+
+  .statistics_charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    height: 100vh;
+  }
+
+  .statistics_chart_bar_horizontal_wrapper {
+    grid-column: 1 / 3;
+  }
+
+  .statistics_chart_bar_vertical_wrapper {
+    grid-row-start: 2;
+  }
+
+  .statistics_chart_pie_wrapper {
+    grid-row-start: 2;
+  }
+}

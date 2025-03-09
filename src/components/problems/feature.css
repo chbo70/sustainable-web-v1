@@ -26,7 +26,7 @@
 }
 
 .card-title {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   font-size: 1.5rem;
   font-weight: 700;
   font-weight: bold;
@@ -65,23 +65,6 @@
   color: red;
 }
 
-.card-price {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 15px;
-  color: #333;
-}
-
-.card-button {
-  background: blue;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  margin-top: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
 .card-button:hover {
   background: darkblue;
 }
@@ -94,15 +77,6 @@
 .main-card .card-title,
 .main-card .card-reason,
 .main-card .card-price {
-}
-
-.main-button {
-  background: white;
-  color: blue;
-}
-
-.main-button:hover {
-  background: lightgray;
 }
 
 @media screen and (min-width: 384px) {

@@ -87,7 +87,7 @@
 
 @media screen and (min-width: 768px) {
   .image-content-main-title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .image-content-title {
@@ -97,7 +97,7 @@
   .image-content-description {
     /* grid-row-start: 2; */
     /* grid-column-start: 2; */
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .image-content {
@@ -108,21 +108,22 @@
 
 @media screen and (min-width: 1152px) {
   .image-content-main-title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .image-content-title {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
   .image-content-description {
     align-self: center;
     grid-row-start: 2;
     grid-column-start: 2;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 4rem;
   }
 
   .image-content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
   }
 }

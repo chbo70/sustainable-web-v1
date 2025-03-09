@@ -9,6 +9,7 @@ import Team from "./components/team/Team";
 import ImageSection from "./components/images/ImageSection";
 import Banner from "./components/banner/Banner";
 import Problems from "./components/problems/Problems";
+import Statistics from "./components/statistics/Statistics";
 
 function App() {
   return (
@@ -18,9 +19,8 @@ function App() {
       <Banner />
       <Problems />
       <About />
-      {/* 
-      <Content /> */}
       <ImageSection />
+      <Statistics />
       <VideoSection />
       <Team />
       <Footer />

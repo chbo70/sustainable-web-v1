@@ -42,7 +42,7 @@
   }
 
   .about_text_header {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .about_text_content {
@@ -52,11 +52,11 @@
 
 @media screen and (min-width: 1600px) {
   .about_text_header {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   .about_text_content {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .about {
