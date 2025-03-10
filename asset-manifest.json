@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/sustainable-web-v1/static/css/main.639f6474.css",
-    "main.js": "/sustainable-web-v1/static/js/main.c530694b.js",
+    "main.css": "/sustainable-web-v1/static/css/main.a9e47f1e.css",
+    "main.js": "/sustainable-web-v1/static/js/main.c1ed7add.js",
     "static/js/453.e559dc9c.chunk.js": "/sustainable-web-v1/static/js/453.e559dc9c.chunk.js",
-    "static/media/snowy_mountain.mp4": "/sustainable-web-v1/static/media/snowy_mountain.ef11b4eb45ba60d09c44.mp4",
+    "static/media/forest.mp4": "/sustainable-web-v1/static/media/forest.a32e24a108b942fd3ec1.mp4",
     "static/media/hero_leaf_2.jpg": "/sustainable-web-v1/static/media/hero_leaf_2.e323a7b5b8051d0ee2a6.jpg",
     "static/media/one-leaf.jpg": "/sustainable-web-v1/static/media/one-leaf.c3252abdb47d23f56716.jpg",
     "static/media/hero_leaf_square.jpg": "/sustainable-web-v1/static/media/hero_leaf_square.04b8e1676a2b40b7e5dd.jpg",
     "static/media/leaf.svg": "/sustainable-web-v1/static/media/leaf.67405f5be0da92966f4562af918a34d7.svg",
     "index.html": "/sustainable-web-v1/index.html",
-    "main.639f6474.css.map": "/sustainable-web-v1/static/css/main.639f6474.css.map",
-    "main.c530694b.js.map": "/sustainable-web-v1/static/js/main.c530694b.js.map",
+    "main.a9e47f1e.css.map": "/sustainable-web-v1/static/css/main.a9e47f1e.css.map",
+    "main.c1ed7add.js.map": "/sustainable-web-v1/static/js/main.c1ed7add.js.map",
     "453.e559dc9c.chunk.js.map": "/sustainable-web-v1/static/js/453.e559dc9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.639f6474.css",
-    "static/js/main.c530694b.js"
+    "static/css/main.a9e47f1e.css",
+    "static/js/main.c1ed7add.js"
   ]
 }
