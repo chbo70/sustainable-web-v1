@@ -12,8 +12,12 @@ import {
   LinearScale,
   Scale,
   scales,
+  RadialLinearScale,
+  PointElement,
+  Filler,
+  LineElement,
 } from "chart.js";
-import { Pie, Bar } from "react-chartjs-2";
+import { Pie, Bar, Line } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
@@ -22,7 +26,11 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend,
-  ArcElement
+  ArcElement,
+  RadialLinearScale,
+  PointElement,
+  Filler,
+  LineElement
 );
 
 export const dataPie = {
@@ -114,6 +122,75 @@ const optionsBarHorizontal = {
   },
 };
 
+const dataLine = {
+  labels: [
+    "Big Blue Ocean",
+    "Got bag",
+    "Oatly",
+    "Greenpeace",
+    "Unilever",
+    "Ikea",
+    "Siemens",
+    "HP",
+    "Waterdrop",
+    "Green Webspace",
+    "Refurbed",
+    "Fridays For Future",
+    "Tesla",
+    "Schneider Electrics",
+    "Apple",
+  ],
+  datasets: [
+    {
+      label: "Number of Images per Website",
+      data: [26, 42, 21, 42, 15, 78, 18, 14, 109, 45, 50, 33, 23, 23, 28],
+      borderColor: "rgba(34, 202, 236, 1)",
+      backgroundColor: "rgba(34, 202, 236, 0.2)",
+      pointBackgroundColor: "rgba(34, 202, 236, 1)",
+      borderWidth: 2,
+      tension: 0.3, // Smooth curves
+    },
+    {
+      label: "Average (37.8)",
+      data: Array(15).fill(37.8), // Horizontal reference line for avg
+      borderColor: "rgba(255, 99, 132, 1)",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      borderWidth: 2,
+      borderDash: [5, 5], // Dashed line
+      pointRadius: 0,
+    },
+  ],
+};
+
+const optionsLine = {
+  responsive: true,
+  scales: {
+    y: {
+      beginAtZero: true,
+      suggestedMax: 120, // Adjust based on highest value
+      ticks: {
+        stepSize: 20,
+      },
+      grid: {
+        color: "rgba(200, 200, 200, 0.3)",
+      },
+    },
+    x: {
+      ticks: {
+        autoSkip: false,
+        maxRotation: 45,
+        minRotation: 45,
+      },
+    },
+  },
+  plugins: {
+    legend: {
+      position: "top",
+      display: false,
+    },
+  },
+};
+
 const Statistics = () => {
   const [chartKey, setChartKey] = useState(0);
 
@@ -178,12 +255,12 @@ const Statistics = () => {
           </div>
         </div>
 
-        <div className="statistics_chart_bar_vertical_wrapper">
-          <div className="statistics_chart_bar_vertical">
-            <Pie key={chartKey} data={dataPie} />
+        <div className="statistics_chart_line_wrapper">
+          <div className="statistics_chart_line">
+            <Line key={chartKey} data={dataLine} options={optionsLine} />
           </div>
-          <div className="statistics_chart_bar_vertical_content">
-            <h2>Average Image Format Usage</h2>
+          <div className="statistics_chart_line_content">
+            <h2>Total used Images</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis a et iste laborum sequi eum aspernatur qui voluptate

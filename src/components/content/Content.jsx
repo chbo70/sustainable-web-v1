@@ -51,6 +51,10 @@ const Content = () => {
           title="Title 3"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla ut nulla sit amet nisi maximus."
         />
+        <Card
+          title="Title 4"
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla ut nulla sit amet nisi maximus."
+        />
       </div>
       <div className="content_button_wrapper">
         <Button className="content_button" link="#" text="read more" />

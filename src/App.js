@@ -22,7 +22,7 @@ function App() {
       <ImageSection />
       <Statistics />
       <VideoSection />
-      <Team />
+      <Content />
       <Footer />
     </>
   );

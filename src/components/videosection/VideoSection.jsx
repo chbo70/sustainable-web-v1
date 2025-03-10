@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./videosection.css";
-import VideoFile from "../../assets/snowy_mountain.mp4";
-import Button from "../utils/Button";
+import VideoFile from "../../assets/forest.mp4";
 
 const VideoSection = () => {
   const videoRef = useRef(null);
@@ -16,21 +15,14 @@ const VideoSection = () => {
           videoRef.current.pause();
         }
       },
-      {
-        threshold: 0.6,
-      }
+      { threshold: 0.6 }
     );
 
     const videoElement = videoRef.current;
-
-    if (videoElement) {
-      observer.observe(videoElement);
-    }
+    if (videoElement) observer.observe(videoElement);
 
     return () => {
-      if (videoElement) {
-        observer.unobserve(videoElement);
-      }
+      if (videoElement) observer.unobserve(videoElement);
     };
   }, []);
 
@@ -38,22 +30,20 @@ const VideoSection = () => {
     <section className="video">
       <div className="video_container">
         <div className="video_wrapper">
-          <video className="video_player" ref={videoRef} controls muted>
+          <video className="video_player" ref={videoRef} muted loop>
             <source src={VideoFile} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
+        <div className="video_overlay"></div>
         <div className="video_content">
-          <div className="video_text">
-            <h1 className="video_text_header">Video Section</h1>
-            <p className="video_text_content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fuga
-              incidunt asperiores harum architecto, nisi voluptate dignissimos
-              velit accusamus unde aliquam. Debitis quis vero nulla quidem
-              cumque repudiandae doloribus eligendi?
-            </p>
-            <Button className="video_button" link="#" text="Learn More" />
-          </div>
+          The internet plays a crucial role in modern life, but its
+          environmental impact is often overlooked. From data centers to website
+          performance, every digital interaction consumes energy. By embracing
+          sustainable web design, we can reduce carbon emissions, optimize
+          efficiency, and create a digital ecosystem that aligns with our
+          planet’s needs. At the heart of a greener web lies minimalist design,
+          optimized code, and eco-friendly hosting solutions.
         </div>
       </div>
     </section>
