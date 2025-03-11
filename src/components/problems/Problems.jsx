@@ -17,8 +17,8 @@ const Problems = () => {
       title: "Web App Complexity",
       reason: "Web applications are becoming more complex and inefficient.",
       features: [
-        { text: "More animations & JS", included: true },
-        { text: "Increased resource use", included: true },
+        { text: "More animations & JS", included: false },
+        { text: "Increased resource use", included: false },
         { text: "Unnecessary scripts", included: false },
       ],
     },
@@ -26,9 +26,9 @@ const Problems = () => {
       title: "Page Size Growth",
       reason: "Web pages have drastically increased in size over time.",
       features: [
-        { text: "More images & videos", included: true },
-        { text: "Higher energy use", included: true },
-        { text: "Data waste", included: true },
+        { text: "More images & videos", included: false },
+        { text: "Higher energy use", included: false },
+        { text: "Data waste", included: false },
       ],
     },
   ];

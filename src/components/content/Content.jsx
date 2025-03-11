@@ -36,10 +36,10 @@ const Content = () => {
   return (
     <section className="content" ref={contentRef}>
       <div className="content_header_wrapper">
-        <h1 className="content_header">Latest News</h1>
+        <h1 className="content_header">Latest Research</h1>
       </div>
       <div className="content_wrapper">
-        <Card
+        {/* <Card
           title="Title 1"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla ut nulla sit amet nisi maximus."
         />
@@ -54,7 +54,75 @@ const Content = () => {
         <Card
           title="Title 4"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, eleifend nunc. Nulla ut nulla sit amet nisi maximus."
-        />
+        /> */}
+        <div className="card_wrapper">
+          <div className="content_card">
+            <img
+              className="content_card_image"
+              src="https://placehold.co/325x231.avif?text=1"
+              alt="placeholder"
+            />
+            <h1 className="content_card_title">Title 1</h1>
+            <div className="content_card_divider"></div>
+            <p className="content_card_content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+              omnis reiciendis aspernatur error maiores illum, similique
+              necessitatibus voluptatem eum? Pariatur repellendus perspiciatis
+              eligendi impedit ut, cupiditate distinctio ex beatae et!
+            </p>
+          </div>
+        </div>
+        <div className="card_wrapper">
+          <div className="content_card">
+            <img
+              className="content_card_image"
+              src="https://placehold.co/325x231.avif?text=2"
+              alt="placeholder"
+            />
+            <h1 className="content_card_title">Title 2</h1>
+            <div className="content_card_divider"></div>
+            <p className="content_card_content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+              omnis reiciendis aspernatur error maiores illum, similique
+              necessitatibus voluptatem eum? Pariatur repellendus perspiciatis
+              eligendi impedit ut, cupiditate distinctio ex beatae et!
+            </p>
+          </div>
+        </div>
+        <div className="card_wrapper">
+          <div className="content_card">
+            <img
+              className="content_card_image"
+              src="https://placehold.co/325x231.avif?text=3"
+              alt="placeholder"
+            />
+            <h1 className="content_card_title">Title 3</h1>
+            <div className="content_card_divider"></div>
+            <p className="content_card_content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+              omnis reiciendis aspernatur error maiores illum, similique
+              necessitatibus voluptatem eum? Pariatur repellendus perspiciatis
+              eligendi impedit ut, cupiditate distinctio ex beatae et!
+            </p>
+          </div>
+        </div>
+        <div className="card_wrapper">
+          <div className="content_card">
+            <img
+              className="content_card_image"
+              src="https://placehold.co/325x231.avif?text=4"
+              alt="placeholder"
+            />
+            <h1 className="content_card_title">Title 4</h1>
+            <div className="content_card_divider"></div>
+            <p className="content_card_content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+              omnis reiciendis aspernatur error maiores illum, similique
+              necessitatibus voluptatem eum? Pariatur repellendus perspiciatis
+              eligendi impedit ut, cupiditate distinctio ex beatae et!
+            </p>
+          </div>
+        </div>
       </div>
       <div className="content_button_wrapper">
         <Button className="content_button" link="#" text="read more" />

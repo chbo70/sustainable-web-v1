@@ -11,11 +11,6 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: var(--color-snow-white);
-  transition: all 0.3s;
-}
-.content_card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .content_card_image {
@@ -57,6 +52,7 @@
   display: flex;
   justify-content: center;
   align-self: center;
+  color: var(--color-neutral1);
 }
 
 @media (min-width: 768px) {

@@ -7,10 +7,11 @@
 
 .footer_content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
+  gap: 2rem;
 }
 
 .footer_section {
@@ -69,19 +70,23 @@
   margin-right: 0;
 }
 
-.fa-facebook-f {
+.facebook_icon {
+  height: 24px;
   color: #1877f2;
 }
 
-.fa-x-twitter {
+.x_icon {
+  height: 24px;
   color: #c3d3dd;
 }
 
-.fa-instagram {
+.instagram_icon {
+  height: 24px;
   color: #e4405f;
 }
 
-.fa-linkedin-in {
+.linkedin_icon {
+  height: 24px;
   color: #0077b5;
 }
 
@@ -89,4 +94,15 @@
   margin-top: 2rem;
   font-family: var(--font-secondary);
   font-size: 0.875rem;
+}
+
+@media (min-width: 1024px) {
+  .footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+  }
 }

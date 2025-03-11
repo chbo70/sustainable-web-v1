@@ -24,12 +24,12 @@ const ImageSection = () => {
   }, []);
   return (
     <section className="image-section">
-      <h1 className="image-content-main-title">Benefits</h1>
       {/* <div className="video_triangle_1"></div> */}
       <div className="image-section-overlay">
         <ul className="image-content-list">
           <li className="image-content-list-item">
             <div className="image-content">
+              <h1 className="image-content-main-title">Benefits</h1>
               <h2 className="image-content-title">Lower Carbon Footprint</h2>
               <p className="image-content-description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.

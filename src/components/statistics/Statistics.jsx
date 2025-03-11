@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./statistics.css";
 import {
   Chart as ChartJS,
@@ -193,16 +193,30 @@ const optionsLine = {
 
 const Statistics = () => {
   const [chartKey, setChartKey] = useState(0);
+  const prevWindowSize = useRef({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
 
-  // Funktion, um das Chart neu zu rendern, wenn die Bildschirmgröße sich ändert
   useEffect(() => {
     const handleResize = () => {
-      setChartKey((prevKey) => prevKey + 1); // Ändert den Key → zwingt zu Neurendern
+      const currentWindowSize = {
+        width: window.innerWidth,
+        height: window.innerHeight,
+      };
+      if (
+        currentWindowSize.width !== prevWindowSize.current.width ||
+        currentWindowSize.height !== prevWindowSize.current.height
+      ) {
+        setChartKey((prevKey) => prevKey + 1); // Force re-render
+        prevWindowSize.current = currentWindowSize; // Update the previous window size
+      }
     };
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   return (
     <section className="statistics">
       <div className="statistics_header_wrapper">

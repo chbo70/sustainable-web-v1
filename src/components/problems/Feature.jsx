@@ -1,6 +1,6 @@
 import React from "react";
 import "./feature.css";
-import { GiPuzzle } from "react-icons/gi";
+import Puzzle from "../../assets/puzzle.svg";
 import { FaChartLine, FaRankingStar } from "react-icons/fa6";
 
 const Feature = ({ title, reason, price, features, isMain }) => {
@@ -8,7 +8,7 @@ const Feature = ({ title, reason, price, features, isMain }) => {
     <div className={`feature_card ${isMain ? "main-card" : ""}`}>
       <div className="card-icon">
         {isMain ? (
-          <GiPuzzle />
+          <img className="puzzle_icon" src={Puzzle} alt="Puzzle" />
         ) : title === "Global CO₂ Ranking" ? (
           <FaRankingStar />
         ) : (

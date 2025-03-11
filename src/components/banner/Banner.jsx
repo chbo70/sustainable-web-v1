@@ -2,8 +2,14 @@ import { React, useRef } from "react";
 import "./banner.css";
 import CountUp, { useCountUp, pauseResume } from "react-countup";
 import { GiEcology } from "react-icons/gi";
+import { co2 } from "@tgwf/co2";
 
 const Banner = () => {
+  const swdmV4 = new co2({ model: "swd", version: 4 });
+
+  const estimate = swdmV4.perByteTrace(1000000);
+  console.log(estimate);
+
   useCountUp({
     ref: "banner_number",
     end: 2.07,

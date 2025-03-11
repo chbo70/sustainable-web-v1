@@ -19,23 +19,85 @@
   color: var(--color-text);
   text-align: justify;
   margin: 1rem 0;
-
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-.about_image_wrapper {
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
+/* === IMAGE SLIDER STYLES === */
+.about_slider {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.about_image {
+/* === DRAGGABLE SLIDER IMPROVEMENTS === */
+.slides-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  cursor: grab;
+}
+
+.slides-container:active {
+  cursor: grabbing;
+}
+
+.slides-inner {
+  display: flex;
+
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  transition: transform 0.2s ease-in-out;
 }
 
+.slide {
+  min-width: 100%;
+  transition: opacity 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* === BUTTON STYLES === */
+.slider_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.slider_button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider_button.left {
+  left: 10px;
+}
+
+.slider_button.right {
+  right: 10px;
+}
+
+/* === RESPONSIVE STYLES === */
 @media screen and (min-width: 768px) {
   .about {
     padding: 5rem;
@@ -48,20 +110,24 @@
   .about_text_content {
     font-size: 1.5rem;
   }
+
+  .slides-container {
+    height: 500px;
+  }
+
+  .slide img {
+    object-fit: cover;
+  }
 }
 
 @media screen and (min-width: 1600px) {
-  .about_text_header {
-    font-size: 3rem;
-  }
-
-  .about_text_content {
-    font-size: 1.5rem;
-  }
-
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+  }
+
+  .slides-container {
+    height: 600px;
   }
 }
