@@ -1,12 +1,25 @@
 {
   "files": {
-    "main.css": "/sustainable-web-v1/static/css/main.7696137e.css",
-    "main.js": "/sustainable-web-v1/static/js/main.2a010373.js",
+    "main.css": "/sustainable-web-v1/static/css/main.32e2e808.css",
+    "main.js": "/sustainable-web-v1/static/js/main.7530d2a8.js",
     "static/js/453.e559dc9c.chunk.js": "/sustainable-web-v1/static/js/453.e559dc9c.chunk.js",
     "static/media/forest_high.mp4": "/sustainable-web-v1/static/media/forest_high.e2b4203c3b3d35ecfa89.mp4",
+    "static/media/image_1.avif": "/sustainable-web-v1/static/media/image_1.40e63c892ce0a0efc3d7.avif",
+    "static/media/image_6.avif": "/sustainable-web-v1/static/media/image_6.98402d1edd440da660e3.avif",
+    "static/media/image_9.avif": "/sustainable-web-v1/static/media/image_9.fe2f7cd3466de591eac0.avif",
+    "static/media/image_8.avif": "/sustainable-web-v1/static/media/image_8.17d63ba84fa812762b1b.avif",
+    "static/media/image_5.avif": "/sustainable-web-v1/static/media/image_5.ded6dcb1100405d8c72c.avif",
     "static/media/hero_leaf_2.jpg": "/sustainable-web-v1/static/media/hero_leaf_2.e323a7b5b8051d0ee2a6.jpg",
+    "static/media/image_4.avif": "/sustainable-web-v1/static/media/image_4.994e98bac0a91b698ae1.avif",
+    "static/media/paper_2.jpg": "/sustainable-web-v1/static/media/paper_2.9f7b63f7247691bef7a3.jpg",
+    "static/media/image_2.avif": "/sustainable-web-v1/static/media/image_2.2c8f928cb6b970f604c1.avif",
+    "static/media/paper_3.png": "/sustainable-web-v1/static/media/paper_3.ec21e260daef4c44fe27.png",
+    "static/media/image_3.avif": "/sustainable-web-v1/static/media/image_3.4b5829579685bf00149c.avif",
     "static/media/one-leaf.jpg": "/sustainable-web-v1/static/media/one-leaf.c3252abdb47d23f56716.jpg",
     "static/media/hero_leaf_square.jpg": "/sustainable-web-v1/static/media/hero_leaf_square.04b8e1676a2b40b7e5dd.jpg",
+    "static/media/image_7.avif": "/sustainable-web-v1/static/media/image_7.edb45f9eb490ca637865.avif",
+    "static/media/tom_greenwood.jpg": "/sustainable-web-v1/static/media/tom_greenwood.c1df2d761c66cd466e11.jpg",
+    "static/media/paper_4.jpg": "/sustainable-web-v1/static/media/paper_4.d0c594cda33a0cab0e37.jpg",
     "static/media/puzzle.svg": "/sustainable-web-v1/static/media/puzzle.a507eb7fdaf46c5e1e23252a0b940ec3.svg",
     "static/media/leaf.svg": "/sustainable-web-v1/static/media/leaf.67405f5be0da92966f4562af918a34d7.svg",
     "static/media/insta.svg": "/sustainable-web-v1/static/media/insta.e86e0be1098985881f63752fdf13a144.svg",
@@ -15,12 +28,12 @@
     "static/media/facebook.svg": "/sustainable-web-v1/static/media/facebook.f7ae25bbf3057cf5890c485995f2e9d5.svg",
     "static/media/x.svg": "/sustainable-web-v1/static/media/x.685ab28e7192aeb4ae9a34cf265c3dbf.svg",
     "static/media/arrow.svg": "/sustainable-web-v1/static/media/arrow.739f84193b27846431893070f0352ab0.svg",
-    "main.7696137e.css.map": "/sustainable-web-v1/static/css/main.7696137e.css.map",
-    "main.2a010373.js.map": "/sustainable-web-v1/static/js/main.2a010373.js.map",
+    "main.32e2e808.css.map": "/sustainable-web-v1/static/css/main.32e2e808.css.map",
+    "main.7530d2a8.js.map": "/sustainable-web-v1/static/js/main.7530d2a8.js.map",
     "453.e559dc9c.chunk.js.map": "/sustainable-web-v1/static/js/453.e559dc9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7696137e.css",
-    "static/js/main.2a010373.js"
+    "static/css/main.32e2e808.css",
+    "static/js/main.7530d2a8.js"
   ]
 }
