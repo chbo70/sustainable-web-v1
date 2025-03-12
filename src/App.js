@@ -10,6 +10,7 @@ import ImageSection from "./components/images/ImageSection";
 import Banner from "./components/banner/Banner";
 import Problems from "./components/problems/Problems";
 import Statistics from "./components/statistics/Statistics";
+import DifferentMethods from "./components/differentMethods/DifferentMethods";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Statistics />
       <VideoSection />
       <Content />
+      <DifferentMethods />
       <Footer />
     </>
   );

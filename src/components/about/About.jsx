@@ -2,23 +2,28 @@ import React, { useEffect, useRef, useState } from "react";
 import "./about.css";
 import gsap from "gsap";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Image1 from "../../assets/slider_images/image_1.avif";
+import Image2 from "../../assets/slider_images/image_2.avif";
+import Image3 from "../../assets/slider_images/image_3.avif";
+import Image4 from "../../assets/slider_images/image_4.avif";
+import Image5 from "../../assets/slider_images/image_5.avif";
+import Image6 from "../../assets/slider_images/image_6.avif";
+import Image7 from "../../assets/slider_images/image_7.avif";
+import Image8 from "../../assets/slider_images/image_8.avif";
+import Image9 from "../../assets/slider_images/image_9.avif";
 
 gsap.registerPlugin();
 
 const images = [
-  "https://placehold.co/816x462.jpg?text=1",
-  "https://placehold.co/816x462.jpg?text=2",
-  "https://placehold.co/816x462.jpg?text=3",
-  "https://placehold.co/816x462.jpg?text=4",
-  "https://placehold.co/816x462.jpg?text=5",
-  "https://placehold.co/816x462.jpg?text=6",
-  "https://placehold.co/816x462.jpg?text=7",
-  "https://placehold.co/816x462.jpg?text=8",
-  "https://placehold.co/816x462.jpg?text=9",
-  "https://placehold.co/816x462.jpg?text=10",
-  "https://placehold.co/816x462.jpg?text=11",
-  "https://placehold.co/816x462.jpg?text=12",
-  "https://placehold.co/816x462.jpg?text=13",
+  Image1,
+  Image2,
+  Image3,
+  Image4,
+  Image5,
+  Image6,
+  Image7,
+  Image8,
+  Image9,
 ];
 
 const About = () => {

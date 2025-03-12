@@ -11,6 +11,7 @@ import {
   faLinkedinIn,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { co2 } from "@tgwf/co2";
 
 const Footer = () => {
   return (

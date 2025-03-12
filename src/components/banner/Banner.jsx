@@ -1,4 +1,4 @@
-import { React, useRef } from "react";
+import { React, useRef, useState, useEffect } from "react";
 import "./banner.css";
 import CountUp, { useCountUp, pauseResume } from "react-countup";
 import { GiEcology } from "react-icons/gi";
@@ -6,24 +6,43 @@ import { co2 } from "@tgwf/co2";
 
 const Banner = () => {
   const swdmV4 = new co2({ model: "swd", version: 4 });
+  const [emission, setEmission] = useState(0);
 
-  const estimate = swdmV4.perByteTrace(1000000);
-  console.log(estimate);
+  function getPageWeight() {
+    const performance = window.performance.getEntriesByType("resource");
+    const transferSize = performance.reduce(
+      (acc, cur) => acc + cur.transferSize,
+      0
+    );
+    return transferSize;
+  }
 
-  useCountUp({
-    ref: "banner_number",
-    end: 2.07,
-    decimals: 2,
-    duration: 5,
-    enableScrollSpy: true,
-    onEnd: ({ pauseResume }) => console.log(pauseResume),
-  });
+  useEffect(() => {
+    const handleLoad = () => {
+      const pageWeight = getPageWeight();
+      const estimate = swdmV4.perVisit(pageWeight);
+      console.log("Estimation from pageWeight", estimate.toFixed(3), "g");
+      setEmission(estimate.toFixed(3));
+    };
+
+    window.addEventListener("load", handleLoad);
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
 
   return (
     <div className="banner">
       <GiEcology className="banner_number" />
       <div className="banner_number">
-        <div id="banner_number" className="banner_number"></div>
+        <div id="banner_number" className="banner_number">
+          {emission > 0 && (
+            <CountUp
+              end={emission}
+              decimals={2}
+              duration={3}
+              enableScrollSpy={true}
+            />
+          )}
+        </div>
         <div className="banner_number">g</div>
       </div>
       <div className="banner_number">of CO&sup2;</div>

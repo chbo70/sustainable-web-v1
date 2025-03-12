@@ -1,5 +1,9 @@
 import Button from "../utils/Button";
 import Card from "../utils/Card";
+import Paper1 from "../../assets/tom_greenwood.jpg";
+import Paper2 from "../../assets/paper_2.jpg";
+import Paper3 from "../../assets/paper_3.png";
+import Paper4 from "../../assets/paper_4.jpg";
 import "./content.css";
 import React, { useEffect, useRef } from "react";
 
@@ -59,7 +63,7 @@ const Content = () => {
           <div className="content_card">
             <img
               className="content_card_image"
-              src="https://placehold.co/325x231.avif?text=1"
+              src={Paper1}
               alt="placeholder"
             />
             <h1 className="content_card_title">Title 1</h1>
@@ -76,7 +80,7 @@ const Content = () => {
           <div className="content_card">
             <img
               className="content_card_image"
-              src="https://placehold.co/325x231.avif?text=2"
+              src={Paper2}
               alt="placeholder"
             />
             <h1 className="content_card_title">Title 2</h1>
@@ -93,7 +97,7 @@ const Content = () => {
           <div className="content_card">
             <img
               className="content_card_image"
-              src="https://placehold.co/325x231.avif?text=3"
+              src={Paper3}
               alt="placeholder"
             />
             <h1 className="content_card_title">Title 3</h1>
@@ -110,7 +114,7 @@ const Content = () => {
           <div className="content_card">
             <img
               className="content_card_image"
-              src="https://placehold.co/325x231.avif?text=4"
+              src={Paper4}
               alt="placeholder"
             />
             <h1 className="content_card_title">Title 4</h1>

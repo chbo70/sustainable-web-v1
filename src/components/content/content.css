@@ -70,6 +70,8 @@
 
 .content_card_image {
   padding: 12px;
+  max-width: 320px;
+  align-self: center;
 }
 
 .content_card_title {
@@ -113,6 +115,15 @@
 @media (min-width: 768px) {
   .card_wrapper {
     flex: 1 1 calc(50% - 20px);
+  }
+
+  .content_card_image {
+    max-width: 500px;
+    max-height: 640px;
+  }
+
+  .content_header {
+    font-size: 3rem;
   }
 }
 
