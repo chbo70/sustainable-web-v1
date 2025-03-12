@@ -14,7 +14,8 @@
 }
 
 .content_card_image {
-  padding: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .content_card_title {

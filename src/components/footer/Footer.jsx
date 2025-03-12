@@ -14,6 +14,7 @@ import {
 import { co2 } from "@tgwf/co2";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
       <div className="footer_content">
@@ -70,7 +71,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer_bottom">
-        <p>&copy; 2024 Blog Name. All rights reserved.</p>
+        <p>
+          &copy; {currentYear} Greener Web. All rights reserved by Boon-Chung
+          Chi.
+        </p>
       </div>
     </footer>
   );

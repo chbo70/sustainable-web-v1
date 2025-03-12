@@ -91,14 +91,16 @@ const About = () => {
       <div className="about_text">
         <h1 className="about_text_header">What is this Website About</h1>
         <p className="about_text_content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fuga
-          incidunt asperiores harum architecto, nisi voluptate dignissimos velit
-          accusamus unde aliquam. Debitis quis vero nulla quidem cumque
-          repudiandae doloribus eligendi? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Ratione dolorem ipsum doloremque delectus,
-          repellendus dolore possimus deleniti corrupti cupiditate, recusandae
-          eligendi, enim earum nemo eos quas reiciendis. Similique, officiis
-          sequi.
+          This website is an example project created as part of a bachelor
+          thesis focused on sustainable web design. It is based on an analysis
+          of existing web pages, where the used media, fonts, design and carbon
+          emission score are evaluated. This website is the foundation for the
+          results of the multivocal literature review, where methods are being
+          tested if and how much they can reduce the carbon emission.
+          <br />
+          For applying and testing the methods, a second website based of this
+          one will be created. The structure stays the same, but the methods
+          will be applied and tested.
         </p>
       </div>
 

@@ -66,7 +66,7 @@ const Content = () => {
               src={Paper1}
               alt="placeholder"
             />
-            <h1 className="content_card_title">Title 1</h1>
+            <h1 className="content_card_title">Sustainable Web Design</h1>
             <div className="content_card_divider"></div>
             <p className="content_card_content">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
@@ -83,7 +83,7 @@ const Content = () => {
               src={Paper2}
               alt="placeholder"
             />
-            <h1 className="content_card_title">Title 2</h1>
+            <h1 className="content_card_title">Best Practices</h1>
             <div className="content_card_divider"></div>
             <p className="content_card_content">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
@@ -100,7 +100,7 @@ const Content = () => {
               src={Paper3}
               alt="placeholder"
             />
-            <h1 className="content_card_title">Title 3</h1>
+            <h1 className="content_card_title">Web Analytic Tools</h1>
             <div className="content_card_divider"></div>
             <p className="content_card_content">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
@@ -117,7 +117,7 @@ const Content = () => {
               src={Paper4}
               alt="placeholder"
             />
-            <h1 className="content_card_title">Title 4</h1>
+            <h1 className="content_card_title">20 Lessons</h1>
             <div className="content_card_divider"></div>
             <p className="content_card_content">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
