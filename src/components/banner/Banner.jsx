@@ -5,7 +5,7 @@ import { GiEcology } from "react-icons/gi";
 import { co2 } from "@tgwf/co2";
 
 const Banner = () => {
-  const swdmV4 = new co2({ model: "swd", version: 4 });
+  const swdmV4 = new co2({ model: "swd" });
   const [emission, setEmission] = useState(0);
 
   function getPageWeight() {
