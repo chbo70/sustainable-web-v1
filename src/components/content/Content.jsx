@@ -65,6 +65,7 @@ const Content = () => {
               className="content_card_image"
               src={Paper1}
               alt="placeholder"
+              loading="lazy"
             />
             <h1 className="content_card_title">Sustainable Web Design</h1>
             <div className="content_card_divider"></div>
@@ -82,6 +83,7 @@ const Content = () => {
               className="content_card_image"
               src={Paper2}
               alt="placeholder"
+              loading="lazy"
             />
             <h1 className="content_card_title">Best Practices</h1>
             <div className="content_card_divider"></div>
@@ -99,6 +101,7 @@ const Content = () => {
               className="content_card_image"
               src={Paper3}
               alt="placeholder"
+              loading="lazy"
             />
             <h1 className="content_card_title">Web Analytic Tools</h1>
             <div className="content_card_divider"></div>
@@ -116,6 +119,7 @@ const Content = () => {
               className="content_card_image"
               src={Paper4}
               alt="placeholder"
+              loading="lazy"
             />
             <h1 className="content_card_title">20 Lessons</h1>
             <div className="content_card_divider"></div>

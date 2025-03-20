@@ -8,7 +8,12 @@ const Feature = ({ title, reason, price, features, isMain }) => {
     <div className={`feature_card ${isMain ? "main-card" : ""}`}>
       <div className="card-icon">
         {isMain ? (
-          <img className="puzzle_icon" src={Puzzle} alt="Puzzle" />
+          <img
+            className="puzzle_icon"
+            src={Puzzle}
+            alt="Puzzle"
+            loading="lazy"
+          />
         ) : title === "Global CO₂ Ranking" ? (
           <FaRankingStar />
         ) : (

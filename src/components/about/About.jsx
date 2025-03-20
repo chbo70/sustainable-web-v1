@@ -121,7 +121,7 @@ const About = () => {
           <div className="slides-inner" ref={sliderRef}>
             {images.map((image, index) => (
               <div className="slide" key={index}>
-                <img src={image} alt={`Slide ${index + 1}`} />
+                <img src={image} alt={`Slide ${index + 1}`} loading="lazy" />
               </div>
             ))}
           </div>
