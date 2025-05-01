@@ -1,21 +1,34 @@
 import React, { useRef, useEffect, useState } from "react";
 import Masonry from "../utils/Masonry/Masonry";
 import "./differentmethods.css";
+import Image1 from "../../assets/masonry_images/image_01.webp";
+import Image2 from "../../assets/masonry_images/image_02.webp";
+import Image3 from "../../assets/masonry_images/image_03.webp";
+import Image4 from "../../assets/masonry_images/image_04.webp";
+import Image5 from "../../assets/masonry_images/image_05.webp";
+import Image6 from "../../assets/masonry_images/image_06.webp";
+import Image7 from "../../assets/masonry_images/image_07.webp";
+import Image8 from "../../assets/masonry_images/image_08.webp";
+import Image9 from "../../assets/masonry_images/image_09.webp";
+import Image10 from "../../assets/masonry_images/image_10.webp";
+import Image11 from "../../assets/masonry_images/image_11.webp";
+import Image12 from "../../assets/masonry_images/image_12.webp";
+import Image13 from "../../assets/masonry_images/image_13.webp";
 
 const data = [
-  { id: 1, image: "https://picsum.photos/id/10/200/300.webp", height: 400 },
-  { id: 2, image: "https://picsum.photos/id/14/200/300.webp", height: 300 },
-  { id: 3, image: "https://picsum.photos/id/15/200/300.webp", height: 500 },
-  { id: 4, image: "https://picsum.photos/id/16/200/300.webp", height: 400 },
-  { id: 5, image: "https://picsum.photos/id/17/200/300.webp", height: 700 },
-  { id: 6, image: "https://picsum.photos/id/19/200/300.webp", height: 500 },
-  { id: 7, image: "https://picsum.photos/id/37/200/300.webp", height: 800 },
-  { id: 8, image: "https://picsum.photos/id/39/200/300.webp", height: 500 },
-  { id: 9, image: "https://picsum.photos/id/85/200/300.webp", height: 600 },
-  { id: 10, image: "https://picsum.photos/id/103/200/300.webp", height: 600 },
-  { id: 11, image: "https://picsum.photos/id/104/200/300.webp", height: 700 },
-  { id: 12, image: "https://picsum.photos/id/106/200/300.webp", height: 400 },
-  { id: 13, image: "https://picsum.photos/id/11/200/300.webp", height: 300 },
+  { id: 1, image: Image1, height: 400 },
+  { id: 2, image: Image2, height: 300 },
+  { id: 3, image: Image3, height: 500 },
+  { id: 4, image: Image4, height: 400 },
+  { id: 5, image: Image5, height: 700 },
+  { id: 6, image: Image6, height: 500 },
+  { id: 7, image: Image7, height: 800 },
+  { id: 8, image: Image8, height: 500 },
+  { id: 9, image: Image9, height: 600 },
+  { id: 10, image: Image10, height: 600 },
+  { id: 11, image: Image11, height: 700 },
+  { id: 12, image: Image12, height: 400 },
+  { id: 13, image: Image13, height: 300 },
 ];
 
 const DifferentMethods = () => {
